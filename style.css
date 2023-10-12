@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos padrão para dispositivos maiores, como desktops e tablets */
+body {
+    background-image: url('image/background_desktop.jpg');
+    /* Imagem de fundo para dispositivos maiores */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* Mantém a imagem de fundo fixa */
+}
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 768px) {
+    body {
+        background-image: url('image/background_mobile.jpg');
+        /* Imagem de fundo para dispositivos móveis */
+    }
+}
+
+.central {
+    background-color: white;
+    /* Fundo branco */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    /* Sombreamento */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    /* largura fixa para desktop */
+    height: 500px;
+    /* altura fixa para desktop */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 768px) {
+    .central {
+        width: 90%;
+        /* Define uma largura relativa para dispositivos móveis */
+        height: auto;
+        /* Define uma altura automática para dispositivos móveis */
+    }
+}
+
+.ad-sense {
+    display: flex;
+    justify-content: space-between;
+    /* Espaço entre os anúncios */
+    margin-top: 10px;
+    /* Reduz o espaço superior para evitar scroll */
+}
+
+.ad-left,
+.ad-right {
+    width: 200px;
+    /* Reduz a largura para 200px (ou qualquer valor desejado) */
+    height: 80px;
+    /* Reduz a altura para 80px (ou qualquer valor desejado) */
+    background: rgb(222, 222, 222);
+    margin: 0 10px;
+    /* Espaçamento lateral dos anúncios */
+}
+
+.botao {
+    order: 1;
+    /* Mover a div .botao para cima */
+}
+
+.conselho {
+    padding: 10px;
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto;
+    order: -1;
+    /* Mover o conselho para cima */
+}
+
+button[name="obter_conselho"] {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button[name="obter_conselho"]:hover {
+    background-color: #0056b3;
+}
