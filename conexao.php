@@ -1,9 +1,9 @@
 <?php
 
-$hostname = "localhost";
-$bancodedados = "dbconselho";
-$usuario = "root";
-$senha = "@D2vveaax";
+$hostname = "";
+$bancodedados = "";
+$usuario = "";
+$senha = "";
 
 $mysqli = new mysqli($hostname, $usuario, $senha, $bancodedados);
 if ($mysqli->connect_errno) {
