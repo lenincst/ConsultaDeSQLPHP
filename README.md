@@ -1,0 +1,1 @@
+Um repositório contendo código PHP e CSS para uma página web simples que exibe conselhos aleatórios quando um botão 'Obter Conselho' é acionado. A página inclui estilos responsivos para diferentes dispositivos e anúncios do Google AdSense. A conexão ao banco de dados é configurada para recuperar e exibir conselhos aleatórios.
